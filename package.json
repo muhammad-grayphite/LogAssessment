@@ -17,9 +17,11 @@
     "url": "https://github.com/Rithmm/interviews/issues"
   },
   "dependencies": {
-    "faker": "^4.1.0",
+    "@datastructures-js/heap": "^4.1.2",
     "bluebird": "^3.5.1",
-    "lodash": "^4.17.4"
+    "faker": "^4.1.0",
+    "lodash": "^4.17.4",
+    "min-heap": "^0.2.3"
   },
   "devDependencies": {
     "ava": "^0.23.0"
