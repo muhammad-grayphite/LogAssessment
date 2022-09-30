@@ -8,13 +8,11 @@ module.exports = (logSources, printer) => {
 
     let promises = []
 
-
-
     logSources?.forEach((source, idx) => {
         promises?.push(source.popAsync().then(function (res) {
             if (res) {
                 let entryToInsert = { ...res, 'index': idx }
-                heap.insert(entryToInsert)
+                entryToInsert ? heap.insert(entryToInsert) : false
             }
 
         }))
@@ -25,7 +23,6 @@ module.exports = (logSources, printer) => {
     Promise.all(promises).then(function () {
         popLogEntry(heap.extractRoot());
     });
-
 
     let popLogEntry = (topNode) => {
         if (!topNode) {
@@ -38,7 +35,7 @@ module.exports = (logSources, printer) => {
             .then(function (res) {
                 if (res) {
                     let entryToInsert = { ...res, 'index': poppedLogSource }
-                    heap?.insert(entryToInsert);
+                    entryToInsert ? heap?.insert(entryToInsert) : false;
                 }
                 popLogEntry(heap?.extractRoot())
             })
