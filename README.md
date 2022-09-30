@@ -16,3 +16,7 @@ We typically see candidates spend 1-3 hours on this exercise, but feel free to t
 ## Expectations
 
 Of course first and foremost we're looking to see if you can solve this challenge! That said we're also looking to see how you structure your code and how fast your solution runs. Don’t hesitate to reach out if you need more clarity around requirements or expectations just like you would in your current job.
+
+## Submission
+
+Once you've completed the challenge, please zip the encompassing folder and submit it [here](https://forms.gle/aBeM3YbU1U2ZAbZ99). Please don't post your solution to this challenge online to make this a fair challenge for other candidates.
